@@ -1,0 +1,48 @@
+*,
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.indentity {
+    color: rgb(170, 170, 170);
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    margin: 20px;
+}
+
+.indentity:hover {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    user-select: none;
+    cursor: pointer;
+}
+.carg {
+    /* display: flex;
+    justify-content: center; */
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+.list {
+    padding-inline-start: 0px;
+}

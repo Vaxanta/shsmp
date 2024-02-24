@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedikit Sejarah SMP Paulus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="kode-mono">
+  <center>
+    <h1 style="margin: 20px;">Sedikit Sejarah Tentang SMP YPPK Santu Paulus</h1>
+  </center>
+  <a class="indentity" href="#sumber">Dibuat oleh Axel, dan sumber lainnya(Kunjungi)</a>
+  <div class="carg" id="carg">
+      <ul class="list">
+        <li><img src="./assets/papan.webp" alt="" class="list-img" id="1"></li>
+        <li><img src="./assets/orang dengan papan.webp" alt="" class="list-img" id="2"></li>
+        <li><img src="./assets/halaman.jpg" alt="" class="list-img" id="3"></li>
+        <li><img src="./assets/depan kantor.webp" alt="" class="list-img" id="4"></li>
+        <li><img src="./assets/halaman tengah.webp" alt="" class="list-img" id="5"></li>
+      </ul>
+  </div>
+  <script>
+    const listImg = [
+      document.getElementById('1'),
+      document.getElementById('2'),
+      document.getElementById('3'),
+      document.getElementById('4'),
+      document.getElementById('5')
+    ];
+    let counter = 0;
+
+    function updateImage() {
+      listImg.forEach(img => img.style.display = 'none');
+      listImg[counter].style.display = 'block';
+    }
+
+    updateImage();
+    setInterval(() => {
+      counter++;
+      // Check if counter exceeds the last image index
+      if (counter >= listImg.length) {
+        counter = 0; // Reset counter to 0
+      }
+      updateImage();
+
+    }, 3000);
+    // function next() {
+      
+    // }
+
+    // function prev() {
+    //   counter--;
+    //   // Check if counter goes below the first image index
+    //   if (counter < 0) {
+    //     counter = listImg.length - 1; // Set counter to the last image index
+    //   }
+    //   updateImage();
+    // }
+  </script>
+</body>
+
+</html>
