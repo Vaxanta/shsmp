@@ -5,6 +5,10 @@ body {
     padding: 0px;
 }
 
+body {
+    background-color: rgb(199, 199, 199);
+}
+
 .kode-mono {
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
@@ -31,10 +35,12 @@ ul {
     list-style-type: none;
 }
 
-span {
-    user-select: none;
+a {
+    text-decoration: none;
+    color: inherit;
     cursor: pointer;
 }
+
 .carg {
     /* display: flex;
     justify-content: center; */
@@ -46,3 +52,28 @@ span {
 .list {
     padding-inline-start: 0px;
 }
+
+.text {
+    margin: 10px;
+}
+
+.ss {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.61);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.ss:hover {
+    background-color: darkgrey;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
